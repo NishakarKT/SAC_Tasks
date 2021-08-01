@@ -1,0 +1,71 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+header img {
+  object-fit: contain;
+  height: 200vh;
+}
+
+header > h1,
+header > h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+header > h2 {
+  width: 600px;
+  font-size: 16px;
+}
+
+header > button {
+  font-weight: 500;
+  margin-top: 5px;
+  margin-left: 50px;
+  border-radius: 5px !important;
+  text-transform: none !important;
+  background-color: darkslateblue !important;
+}
+
+header > button:hover {
+  filter: brightness(120%);
+}
+
+header > button > i {
+  margin-right: 5px !important;
+}
+
+@media only screen and (max-width: 850px) {
+  header {
+    align-items: center;
+    text-align: center;
+  }
+
+  header > h1,
+  header > h2,
+  header > button {
+    margin-left: 0;
+  }
+
+  header > h2 {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  header > h1 {
+    font-size: 30px;
+  }
+  header > h2 {
+    font-size: 15px;
+  }
+}

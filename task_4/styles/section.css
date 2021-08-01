@@ -1,0 +1,100 @@
+section {
+  min-height: 110vh !important;
+  width: 100vw !important;
+  margin-bottom: -20px;
+}
+
+section img {
+  object-fit: contain;
+  height: 200vh;
+  opacity: 0.9 !important;
+}
+
+.section__carousel {
+  margin-top: -40px;
+}
+
+.section__dataCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+.section__dataCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/card_bg.jpg") no-repeat center / cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.section__dataCard > h1,
+.section__dataCard > h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.section__dataCard > h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.section__ratingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.section__ratingForm > div {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.section__ratingForm > div > input {
+  color: white;
+}
+
+.section__ratingForm > button {
+  border-radius: 5px;
+  width: 100%;
+  background-color: darkslateblue !important;
+  padding: 2px 10px !important;
+}
+
+.section__ratingForm > button:hover {
+  filter: brightness(130%);
+}
+
+.section__ratingForm > button > i {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 250px) {
+  .section__ratingForm {
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .section__carousel {
+    display: none;
+  }
+}

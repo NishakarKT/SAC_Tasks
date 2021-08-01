@@ -1,0 +1,1 @@
+Hey there, I am Nishakar K. and this is my task-1 of SAC, IIT KGP. In this task, I have cloned a given web page and tried to make it as responsive as possible. Note that only the first page is the one I have cloned, and not the pages that the links on this web page direct you to.

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/gif">
+    <title>Task 4 - SAC</title>
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/index.css" />
+    <!-- <link rel="stylesheet" href="styles/header.css" /> -->
+    <!-- <link rel="stylesheet" href="styles/section.css" /> -->
+    <!-- <link rel="stylesheet" href="styles/table.css" /> -->
+</head>
+
+<body>
+
+    <header class="parallax-container">
+        <div class="parallax"><img src="images/intro_bg.jpg"></div>
+        <h1>Welcome to Task 4</h1>
+        <h2>Under this task I have created a simple web page that helps your store IMDB ratings of your favourite
+            movies. Data is stored in your
+            browser's local storage for easy data access.</h2>
+        <button class="header__getStartedBtn waves-effect waves-light btn">
+            <i class="material-icons left">arrow_forward</i>Get Started
+        </button>
+    </header>
+
+    <section class="parallax-container">
+        <div class="parallax"><img src="images/section_bg.jpg"></div>
+        <p style="color: white; font-size: 30px; margin: 10px 20px; font-weight: 600;">Movie Form</p>
+
+        <form class="section__ratingForm">
+            <div class="input-field">
+                <input id="movie" name="movie" type="text" autocomplete="off">
+                <label for="movie">Movie Name</label>
+            </div>
+            <div class="input-field">
+                <input id="rating" name="rating" type="text" autocomplete="off">
+                <label for="rating">IMDB Rating</label>
+            </div>
+            <button class="waves-effect waves-light btn"><i class="material-icons">add</i></button>
+        </form>
+
+        <div class="section__carousel carousel">
+            <div class="section__dataCard carousel-item">
+                <h1>Movie</h1>
+                <h2>Reload to update carousel</h2>
+            </div>
+            <div class="section__dataCard carousel-item">
+                <h1>SAC</h1>
+                <h2>IIT KGP</h2>
+            </div>
+            <div class="section__dataCard carousel-item">
+                <h1>20IE10019</h1>
+                <h2>Nishakar K.</h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="table parallax-container">
+        <div class="parallax"><img src="images/table_bg.jpg"></div>
+        <p style="color: white; font-size: 30px; margin: 10px; font-weight: 600;">Movie Ratings</p>
+        <div class="table__scroll">
+            <table class="table__ratings">
+                <tr>
+                    <th>Movie</th>
+                    <th>IMDB</th>
+                </tr>
+            </table>
+        </div>
+        <button class=" table__scrollUpBtn waves-effect waves-light btn"><i
+                class="material-icons">arrow_upward</i></button>
+        <button class=" table__delBtn waves-effect waves-light btn"><i class="material-icons">delete</i></button>
+    </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="scripts/index.js"></script>
+
+</html>

@@ -1,0 +1,61 @@
+.table {
+  position: relative;
+  height: 100vh;
+  padding: 0 10px;
+}
+
+.table img {
+  object-fit: contain;
+  height: 200vh;
+  filter: brightness(50%);
+}
+
+.table__scroll {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.table__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.table__ratings {
+  width: 100%;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.table__scrollUpBtn,
+.table__delBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: darkslateblue;
+  border-radius: 5px;
+}
+
+.table__scrollUpBtn > i,
+.table__delBtn > i {
+  font-weight: 700;
+}
+
+.table__scrollUpBtn:hover,
+.table__delBtn:hover {
+  filter: brightness(130%);
+  background-color: darkslateblue !important;
+}
+
+.table__delBtn {
+  top: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+  .table__scrollUpBtn,
+  .table__delBtn {
+    display: none;
+  }
+}

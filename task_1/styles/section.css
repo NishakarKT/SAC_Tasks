@@ -1,0 +1,468 @@
+section {
+  display: flex;
+}
+
+.section__left {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+/* User Card */
+.section__userCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #b9b9b9;
+  padding: 15px;
+  margin: 6px;
+  border-radius: 8px;
+  height: 330px;
+}
+
+/* User Stats */
+.section__userStats {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: yr;
+  justify-content: space-evenly;
+}
+
+/* User Intro */
+.section__userIntro {
+  display: flex;
+  align-items: center;
+}
+
+.section__userIntro > img {
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.section__userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__userInfo > h1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: red;
+}
+
+.section__userInfo > h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: red;
+  margin-bottom: 5px;
+}
+
+.section__userInfo > h2 > span {
+  color: black;
+}
+
+.section__userInfo > h3,
+.section__userInfo > h4 {
+  font-size: 11px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.section__userInfo > h3 > a,
+.section__userInfo > h4 > a {
+  color: blue;
+}
+
+.section__userInfo > h3 > a:visited,
+.section__userInfo > h4 > a:visited {
+  color: #551a92;
+}
+
+/* User Contribution */
+.section__userRating,
+.section__userContribution,
+.section__userFriends,
+.section__userlastVisited,
+.section__userRegistered,
+.section__userBlog,
+.section__userTalks {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.section__userRating > img,
+.section__userContribution > img,
+.section__userFriends > img,
+.section__userBlog > img,
+.section__userTalks > img,
+.section__userContribution > img {
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.section__userContribution span,
+.section__userlastVisited > span {
+  font-weight: 600;
+  color: green;
+}
+
+/* User Rating */
+.section__userRating > p {
+  font-size: 11px;
+}
+
+.section__userRating span {
+  font-weight: 600;
+  color: red;
+}
+
+/*  User's Image */
+.section__userPhoto {
+  position: relative;
+  border: 1px solid #b9b9b9;
+  padding: 15px;
+}
+
+.section__userPic {
+  object-fit: cover;
+  width: 250px;
+}
+
+.section__5yr_badge {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: contain;
+  width: 55px;
+  z-index: 1;
+}
+
+.section__8yr_badge {
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+  object-fit: contain;
+  width: 65px;
+  z-index: 1;
+}
+
+/* Graph card */
+.section__graphCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #b9b9b9;
+  padding: 15px;
+  margin: 6px;
+  border-radius: 8px;
+}
+
+.section__graphCard > select {
+  margin-left: auto;
+  font-size: 10px;
+}
+
+.section__graphCard > img {
+  object-fit: contain;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Activity card */
+.section__activityCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #b9b9b9;
+  padding: 15px;
+  margin: 6px;
+  border-radius: 8px;
+}
+
+.section__activityCard > select {
+  margin-left: auto;
+  font-size: 10px;
+}
+
+.section__activityCard > img {
+  object-fit: contain;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/*  Section Right */
+.section__right {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__payAttentionCard,
+.section__streamsCard,
+.section__table,
+.section__findUserCard,
+.section__recentCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b9b9b9;
+  border-radius: 8px;
+  margin: 6px;
+  overflow: hidden;
+}
+
+.section__payAttentionCard h1,
+.section__streamsCard h1,
+.section__table h1,
+.section__findUserCard h1,
+.section__recentCard h1 {
+  color: #3b5998;
+  font-size: 15px;
+  padding: 2px 10px;
+}
+
+.section__payAttentionCard a,
+.section__streamsCard a {
+  font-size: 14px;
+}
+
+.section__payAttentionCard time,
+.section__streamsCard time {
+  font-size: 13px;
+  color: #777777;
+}
+
+.section__registerContest,
+.section__solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding-top: 5px;
+}
+
+.section__solution > p {
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.section__solution > p > span {
+  font-weight: 600;
+  color: red;
+}
+
+.section__signupContest {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  padding: 10px;
+  color: #777777;
+}
+
+.section__signupContest > p {
+  margin-left: 5px;
+}
+
+.section__signupContest a {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.section__fbLikeBtn {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  background-color: #1877f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.section__fbLikeBtn > i {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/* Section streams card */
+.section__streamsCard > a {
+  align-self: flex-end;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/* Section Top Rated Card */
+
+.section__tableFoot {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding: 5px;
+  padding-top: 0;
+}
+
+.section__tableFoot > a {
+  white-space: nowrap;
+}
+
+.section__tableView {
+  margin-left: auto;
+}
+
+/* section top rated table */
+.section__table table {
+  font-size: 11px;
+  text-align: center;
+  border-collapse: separate;
+  margin: -2px -1px;
+  border-spacing: 0px !important;
+}
+
+.section__tableMidField {
+  font-weight: 600;
+  color: red;
+}
+
+.section__tableMidField > span {
+  color: black;
+}
+
+.section__table table th {
+  font-size: 13px;
+  border: 1px solid #b9b9b9;
+  margin: 0;
+}
+
+.section__table table td {
+  border: 1px solid #b9b9b9;
+  margin: 0;
+  padding: 3px 5px;
+}
+
+/* Section find user card */
+.section__findUserCardBody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.section__findUserCardBody > div {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.section__findUserCardBody > div > input {
+  margin-left: 5px;
+}
+
+.section__findUserCardBody > button {
+  margin: 10px 0;
+  padding: 0 8px;
+  border-radius: 2px;
+  border: 1px solid #777777;
+  outline: none;
+}
+
+.section__findUserCardBody > button {
+  align-self: flex-end;
+}
+
+/* section recent card */
+.section__recentActions {
+  font-size: 10px;
+  padding: 10px;
+}
+
+.section__recentActions > p {
+  margin-top: 10px;
+}
+
+.section__recentUser1 {
+  font-weight: 600;
+  color: #aa00bd;
+}
+
+.section__recentUser2 {
+  font-weight: 600;
+  color: red;
+}
+
+.section__recentUser3 {
+  font-weight: 600;
+  color: orange;
+}
+
+.section__recentUser4 {
+  font-weight: 600;
+  color: green;
+}
+
+.section__recentUser5 {
+  font-weight: 600;
+  color: blue;
+}
+
+.section__recentActions img {
+  transform: translateY(2px);
+  margin-left: 5px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1100px) {
+  section {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    padding: 0;
+  }
+  .section__userCard {
+    height: fit-content;
+    flex-direction: column-reverse;
+  }
+  .section__userStats {
+    align-self: flex-start;
+  }
+  .section__userPhoto {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .section__userPic {
+    width: 100%;
+  }
+
+  .section__5yr_badge {
+    width: 45px;
+  }
+
+  .section__8yr_badge {
+    width: 50px;
+  }
+
+  .section__userRating,
+  .section__userContribution,
+  .section__userFriends,
+  .section__userBlog,
+  .section__userTalks {
+    font-size: 12px !important;
+  }
+
+  .section__userIntro > img {
+    width: 60px;
+  }
+}

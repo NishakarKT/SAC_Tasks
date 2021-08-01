@@ -1,0 +1,44 @@
+.subNav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 5px;
+  margin-top: 15px;
+}
+
+.subNav__link {
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: cuprum, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 3px 8px;
+}
+
+.subNav__hoverBubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10px;
+  background-color: #b9b9b9;
+  border-radius: 5px;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 530px) {
+  .subNav {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .subNav__hoverBubble {
+    display: none;
+  }
+}

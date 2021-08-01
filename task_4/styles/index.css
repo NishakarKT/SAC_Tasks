@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+  background-color: black;
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*  Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+header img {
+  object-fit: contain;
+  height: 200vh;
+}
+
+header > h1,
+header > h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+header > h2 {
+  width: 600px;
+  font-size: 16px;
+}
+
+header > button {
+  font-weight: 500;
+  margin-top: 5px;
+  margin-left: 50px;
+  border-radius: 5px !important;
+  text-transform: none !important;
+  background-color: darkslateblue !important;
+}
+
+header > button:hover {
+  filter: brightness(120%);
+}
+
+header > button > i {
+  margin-right: 5px !important;
+}
+
+@media only screen and (max-width: 850px) {
+  header {
+    align-items: center;
+    text-align: center;
+  }
+
+  header > h1,
+  header > h2,
+  header > button {
+    margin-left: 0;
+  }
+
+  header > h2 {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  header > h1 {
+    font-size: 30px;
+  }
+  header > h2 {
+    font-size: 15px;
+  }
+}
+
+/* Section */
+
+section {
+  min-height: 110vh !important;
+  width: 100vw !important;
+  margin-bottom: -20px;
+}
+
+section img {
+  object-fit: contain;
+  height: 200vh;
+  opacity: 0.9 !important;
+}
+
+.section__carousel {
+  margin-top: -40px;
+}
+
+.section__dataCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+.section__dataCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/card_bg.jpg") no-repeat center / cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.section__dataCard > h1,
+.section__dataCard > h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.section__dataCard > h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.section__ratingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.section__ratingForm > div {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.section__ratingForm > div > input {
+  color: white;
+}
+
+.section__ratingForm > button {
+  border-radius: 5px;
+  width: 100%;
+  background-color: darkslateblue !important;
+  padding: 2px 10px !important;
+}
+
+.section__ratingForm > button:hover {
+  filter: brightness(130%);
+}
+
+.section__ratingForm > button > i {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 250px) {
+  .section__ratingForm {
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .section__carousel {
+    display: none;
+  }
+}
+
+/* Table */
+
+.table {
+  position: relative;
+  height: 100vh;
+  padding: 0 10px;
+}
+
+.table img {
+  object-fit: contain;
+  height: 200vh;
+  filter: brightness(50%);
+}
+
+.table__scroll {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.table__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.table__ratings {
+  width: 100%;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.table__scrollUpBtn,
+.table__delBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: darkslateblue;
+  border-radius: 5px;
+}
+
+.table__scrollUpBtn > i,
+.table__delBtn > i {
+  font-weight: 700;
+}
+
+.table__scrollUpBtn:hover,
+.table__delBtn:hover {
+  filter: brightness(130%);
+  background-color: darkslateblue !important;
+}
+
+.table__delBtn {
+  top: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+  .table__scrollUpBtn,
+  .table__delBtn {
+    display: none;
+  }
+}
