@@ -77,7 +77,7 @@ app.post("/new", async (req, res) => {
 });
 
 // connecting to mongo db
-mongoose.connect("mongodb+srv://admin:SLkP2wYVmQL7fvWK@cluster0.w4sgi.mongodb.net/task5?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://admin:<password>@cluster0.w4sgi.mongodb.net/task5?retryWrites=true&w=majority", {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
